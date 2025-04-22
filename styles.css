@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+main{
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 0 0 5px #000000;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#display{
+    display: block;
+    text-align: center;
+    width: 40%;
+    height: 10%;
+    box-shadow: 0 0 5px black;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+#numberbtns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.numbtn,#clear,#result{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+}
+
+#operationbtns{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+}
+
+.opbtn{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+@media (max-width:430px) {
+    .numbtn,#clear,#result{
+        width: 30px;
+        height: 30px;
+    }
+}
